@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - Sklep SnikersBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shoe.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sklep SnikersBox</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="presentation.html">Obówie</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="shoes.html">Przewodnik rozmiarów</a></li>
+                <li><a href="cart.html">Koszyk</a></li>
+                <li><a href="convert.html">Kalkulator osiągnięć</a></li>
+                <li><a href="game.html">Gra</a></li>
+                <li><a href="map.html">Znajdziesz nas</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div id="session-time">Czas spędzony na stronie: <span id="time-spent"></span></div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+        </section>
+        <section class="size-chart">
+            <h2>Znajdziesz nas również stacjonarnie w 3 sklepach</h2>
+            <h3>Mazowsze 00-339 Warszawa, Wybrzeże Kościuszkowskie 45 
+            </h3>
+            <h3>Wielkopolska: 61-714 Poznań, Aleje Niepodległości 36 
+            </h3>
+            <h3>Pomorze: 80-244 Gdańsk, C.H. Manhattan, aleja Grunwaldzka 82 
+            </h3>
+            <p>Naciśnij na województwo, aby znaleźć nas na mapie.</p>
+            <img src="POLSKA_mapa_woj_z_powiatami.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="_top" alt="Poznan" title="Poznan"
+                    href="https://www.google.pl/maps/place/Sklep+Biegacza/@52.4148409,16.9230227,17z/data=!4m10!1m2!2m1!1sSklep+Biegacza!3m6!1s0x47045b4f33ba5bd9:0xc22780e60dbe86bf!8m2!3d52.4150833!4d16.927047!15sCg5Ta2xlcCBCaWVnYWN6YSIDiAEBWhAiDnNrbGVwIGJpZWdhY3phkgENcnVubmluZ19zdG9yZeABAA!16s%2Fg%2F11b7cfd2qd?entry=ttu"
+                    coords="341,558,324,522,271,541,173,443,168,364,183,296,221,288,258,252,234,230,258,210,275,190,291,212,313,214,325,218,312,240,324,256,319,282,318,305,330,310,334,324,327,336,331,350,335,355,343,355,363,361,389,374,419,383,443,391,462,407,478,407,484,415,491,431,477,432,477,444,461,450,455,456,456,475,451,491,429,486,419,515,417,551,414,562,402,559,397,568,394,588,397,598,373,616"
+                    shape="poly">
+                <area target="_top" alt="Warszawa" title="Warszawa"
+                    href="https://www.google.pl/maps/place/Sklep+Biegacza+Warszawa+Powi%C5%9Ble/@52.2421059,21.0234887,16.5z/data=!3m1!5s0x471ecc5b9219c915:0xb0162705b536586d!4m6!3m5!1s0x471ecc5b9220914f:0x31e719053f5ecb48!8m2!3d52.2419081!4d21.0271391!16s%2Fg%2F11b6gh5k7g?entry=ttu"
+                    coords="771,613,738,621,709,609,663,598,636,571,630,515,653,515,642,477,614,475,612,444,600,439,591,418,552,418,512,396,531,351,535,310,557,275,584,273,618,279,660,249,738,216,751,276,774,291,786,310,809,313,828,328,834,361,846,388,900,400,882,444,854,447,821,451,777,460,781,492,768,521,756,523,782,538,776,564"
+                    shape="poly">
+                <area target="_top" alt="Gdansk" title="Gdansk"
+                    href="https://www.google.pl/maps/search/Sklep+Biegacza/@54.3772331,18.574433,14z?entry=ttu"
+                    coords="509,82,514,132,540,145,535,167,516,169,494,202,460,197,410,184,395,178,367,187,358,202,329,214,289,203,278,184,280,138,266,103,271,59,268,41,324,11,379,1,409,0,434,10,467,27,472,42,460,34,443,28,449,60,461,76"
+                    shape="poly">
+            </map>
+    </main>
+    <footer>
+        <h4>&copy; 2024 Sklep SnikersBox, Inc. Wszelkie prawa zastrzeżone</h4>
+        <p>Projekt strony internetowej wykonany w ramach
+            zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+        <p>Autor strony: Adrian Włodarczyk</p>
+        <p id="date"></p>
+        <p id="time"></p>
+        <p id="visit-counter">Liczba odwiedzin: <span id="visits">0</span></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="zegar.js"></script>
+</body>
+
+</html>

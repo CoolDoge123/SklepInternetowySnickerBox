@@ -1,0 +1,36 @@
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.presentation {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.presentation .slide {
+    display: none;
+}
+
+.presentation .slide.active {
+    display: block;
+}
+
+.presentation img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+p{
+    text-align: left;
+}

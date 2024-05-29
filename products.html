@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkty - Sklep SnikersBox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sklep SnikersBox</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="presentation.html">Obówie</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="shoes.html">Przewodnik rozmiarów</a></li>
+                <li><a href="cart.html">Koszyk</a></li>
+                <li><a href="convert.html">Kalkulator osiągnięć</a></li>
+                <li><a href="game.html">Gra</a></li>
+                <li><a href="map.html">Znajdziesz nas</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div id="session-time">Czas spędzony na stronie: <span id="time-spent"></span></div>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Nasze Produkty</h2>
+            <div class="product">
+                <img src="jordan1mocha1.jpg" alt="Buty Nike Jordan 1 Dark Mocha">
+                <h3>Buty Nike Jordan 1 Dark Mocha</h3>
+                <p>Cena: 2799 PLN</p>
+                <button onclick="addToCart('Buty Nike Jordan 1 Dark Mocha', 2799)">Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="jordan 3 retro navy.png" alt="Buty Nike Jordan 3 Retro Midnight Navy">
+                <h3>Buty Nike Jordan 3 Retro Midnight Navy</h3>
+                <p>Cena: 1249 PLN</p>
+                <button onclick="addToCart('Buty Nike Jordan 3 Retro Midnight Navy', 1249)">Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="jordan4travis.jpg" alt="Buty Nike Jordan 4 Travis Cactus">
+                <h3>Buty Nike Jordan 4 Travis Cactus</h3>
+                <p>Cena: 6999 PLN</p>
+                <button onclick="addToCart('Buty Nike Jordan 4 Travis Cactus', 6999)">Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="jordan6carmine.jpg" alt="Buty Nike Jordan 6 Retro Carmin">
+                <h3>Buty Nike Jordan 6 Retro Carmin</h3>
+                <p>Cena: 899 PLN</p>
+                <button onclick="addToCart('Buty Nike Jordan 6 Retro Carmin', 899)">Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="jordan11concord.jpg" alt="Buty Nike Jordan 11 Retro Concord">
+                <h3>Buty Nike Jordan 11 Retro Concord</h3>
+                <p>Cena: 2699 PLN</p>
+                <button onclick="addToCart('Buty Nike Jordan 11 Retro Concord', 2699)">Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="jordan13retrouniversityblue.jpg" alt="Buty Nike Jordan 13 Retro University Blue">
+                <h3>Buty Nike Jordan 13 Retro University Blue</h3>
+                <p>Cena: 1399 PLN</p>
+                <button onclick="addToCart('Buty Nike Jordan 13 Retro University Blue', 1399)">Dodaj do koszyka</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>&copy; 2024 Sklep SnikersBox, Inc. Wszelkie prawa zastrzeżone</h4>
+        <p>Projekt strony internetowej wykonany w ramach
+            zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+        <p>Autor strony: Adrian Włodarczyk</p>
+        <p id="date"></p>
+        <p id="time"></p>
+        <p id="visit-counter">Liczba odwiedzin: <span id="visits">0</span></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="zegar.js"></script>
+</body>
+
+</html>

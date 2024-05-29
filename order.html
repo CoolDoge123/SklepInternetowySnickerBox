@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamówienie - Sklep SnikersBox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sklep SnikersBox</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="presentation.html">Obówie</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="shoes.html">Przewodnik rozmiarów</a></li>
+                <li><a href="cart.html">Koszyk</a></li>
+                <li><a href="convert.html">Kalkulator osiągnięć</a></li>
+                <li><a href="game.html">Gra</a></li>
+                <li><a href="map.html">Znajdziesz nas</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div id="session-time">Czas spędzony na stronie: <span id="time-spent"></span></div>
+        </nav>
+    </header>
+    <main>
+        <section id="order">
+            <h2>Twoje Zamówienie</h2>
+            <p id="empty-cart-message" style="display: none;">Koszyk jest pusty. Dodaj produkty do koszyka.</p>
+            <form id="order-form" onsubmit="return submitOrderForm()">
+                <label for="imie">Imię: </label>
+                <input type="text" name="imie" id="imie" required autofocus placeholder="Podaj imię">
+                <br>
+                <label for="nazwisko">Nazwisko: </label>
+                <input type="text" name="nazwisko" id="nazwisko" placeholder="Podaj nazwisko" required>
+                <br>
+                <label for="telefon">Telefon: </label>
+                <input type="tel" name="telefon" id="telefon" placeholder="(+48) xxx-xxx-xxx" required>
+                <br>
+                <label for="mail">E-mail: </label>
+                <input type="email" name="mail" id="mail" placeholder="nazwa@example.com" required>
+                <br>
+                <label for="miasto">Miejscowość zamieszkania: </label>
+                <input type="text" name="miasto" id="miasto" placeholder="Podaj miejscowość" required>
+                <br>
+                <label for="adres">Ulica: </label>
+                <input type="text" name="adres" id="adres" placeholder="Podaj ulicę" required>
+                <br>
+                <fieldset>
+                    <legend>Wybierz swoją płeć</legend>
+                    <input type="radio" name="plec" id="">Mężczyzna<br>
+                    <input type="radio" name="plec" id="">Kobieta<br>
+                    <input type="radio" name="plec" id="">Wolę nie podawać<br>
+                </fieldset>
+                <fieldset>
+                    <legend>Skąd dowiedziałeś się o nas:</legend>
+                        <input type="checkbox" name="wiedza" id="a">
+                        <label for="a">Z polecenia znajomego</label> <br>
+                        <input type="checkbox" name="wiedza" id="b"><br>
+                        <label for="b">Z reklam</label> <br>
+                        <input type="checkbox" name="wiedza" id="c"><br>
+                        <label for="c">Z internetu</label> <br>
+                        <input type="checkbox" name="wiedza" id="d">
+                        <label for="d">Od sławnej osoby</label> <br>
+                        <input type="checkbox" name="wiedza" id="e">
+                        <label for="e">Żaden z powyższych</label>
+                </fieldset>
+                
+                <br>
+                <br>
+                <label for="dataUr">Data urodzenia:</label>
+                <input type="date" name="dataUr" id="dataUr" required>
+                <label for="rozmiar_EU">Rozmiary obuwia EU:</label>
+                <select name="rozmiar_EU" id="rozmiar_EU">
+                        <option value="38.5">38.5</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="40.5">40.5</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="42.5">42.5</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="44.5">44.5</option>
+                        <option value="45">45</option>
+                        <option value="45.5">45.5</option>
+                        <option value="46">46</option>
+                        <option value="47.5">47.5</option>
+                        <option value="48.5">48.5</option>
+                        <option value="49.5">49.5</option>
+                        <option value="50.5">50.5</option>
+                </select>
+                <h3>Produkty w koszyku:</h3>
+                <ul id="order-items"></ul>
+                <p id="order-total">Łącznie: 0 PLN</p>
+                <button type="submit">Zamów</button>
+            </form>
+            <p id="confirmation" style="display: none;">Dziękujemy za zamówienie! Produkt został zamówiony.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h4>&copy; 2024 Sklep SnikersBox, Inc. Wszelkie prawa zastrzeżone</h4>
+        <p>Projekt strony internetowej wykonany w ramach
+            zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+        <p>Autor strony: Adrian Włodarczyk</p>
+        <p id="date"></p>
+        <p id="time"></p>
+        <p id="visit-counter">Liczba odwiedzin: <span id="visits">0</span></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="zegar.js"></script>
+</body>
+
+</html>

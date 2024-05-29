@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #111;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+h1{
+    text-shadow: 5px 3px 3px gray;
+}
+h4{
+    text-align: left;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    text-align: center;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px aquamarine;
+}
+.intro, .product, #cart, #contact, #order {
+    padding: 20px;
+    text-align: center;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+.product img {
+    width: 100%;
+    height: 130px;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+fieldset label{
+    margin-top: 0px;
+}
+fieldset input {
+    margin-top: 0px;
+}
+input, textarea, fieldset {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 2px;
+}
+footer p {
+    text-align: center;
+}
+@media screen and (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .presentation {
+        max-width: 100%;
+    }
+
+    .presentation img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1048px) {
+    header {
+        padding: 20px 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .intro {
+        padding: 0 20px;
+    }
+
+    .presentation {
+        padding: 0 20px;
+        max-width: 90%;
+    }
+
+    .presentation img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+ #date,#time {
+     display: inline-block;
+     margin-right: 10px;
+ }

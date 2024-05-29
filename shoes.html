@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przewodnik rozmiarów - Sklep SnikersBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shoe.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sklep SnikersBox</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="presentation.html">Obówie</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="shoes.html">Przewodnik rozmiarów</a></li>
+                <li><a href="cart.html">Koszyk</a></li>
+                <li><a href="convert.html">Kalkulator osiągnięć</a></li>
+                <li><a href="game.html">Gra</a></li>
+                <li><a href="map.html">Znajdziesz nas</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div id="session-time">Czas spędzony na stronie: <span id="time-spent"></span></div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+        </section>
+        <section class="size-chart">
+            <h2>Tabela rozmiarów męskich butów Nike Jordan</h2>
+            <p>Znajdź swój rozmiar w poniższej tabeli. Jeśli nie znasz swojego rozmiaru, skorzystaj z podpowiedzi „Jak
+                dokonać pomiaru długości stopy" na dole tabeli, aby znaleźć odpowiedni rozmiar. Należy pamiętać, że
+                rozmiar CM znajdujący się na pudełkach i etykietach butów różni się od długości stopy (cm).</p>
+            <p>Przewiń w bok, by wyświetlić więcej rozmiarów.</p>
+            <div class="table-container">
+                <table id="sizeTable"></table>
+            </div>
+            <h3>Jak dokonać pomiaru długości stopy</h3>
+            <ol>
+                <li>Przyklej kawałek kartki do twardej płaskiej powierzchni. Upewnij się, że papier się nie ślizga.</li>
+                <li>Stań na kartce; stopy powinny być rozstawione na szerokość barków, a ciężar ciała równomiernie
+                    rozłożony (tylko jedna stopa powinna znajdować się na kartce).</li>
+                <li>Długopisem lub ołówkiem skierowanym w dół zaznacz czubek dużego palca i najbardziej wystającą część
+                    pięty. W razie potrzeby poproś kogoś bliskiego o pomoc.</li>
+                <li>Po zaznaczeniu punktów na kartce zejdź z niej i za pomocą linijki lub taśmy mierniczej zmierz
+                    odległość między dwoma punktami. Jest to pomiar długości stopy.</li>
+                <li>Powtórz czynności z drugą stopą. Pamiętaj, że stopy mogą mieć różne długości.</li>
+                <li>Wyszukaj dłuższy pomiar w naszej tabeli rozmiarów, aby znaleźć odpowiedni rozmiar. Jeśli pomiar
+                    wypadnie pomiędzy dwoma rozmiarami, polecamy wybrać większy rozmiar.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <h4>&copy; 2024 Sklep SnikersBox, Inc. Wszelkie prawa zastrzeżone</h4>
+        <p>Projekt strony internetowej wykonany w ramach
+            zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+        <p>Autor strony: Adrian Włodarczyk</p>
+        <p id="date"></p>
+        <p id="time"></p>
+        <p id="visit-counter">Liczba odwiedzin: <span id="visits">0</span></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="shoe.js"></script>
+    <script src="zegar.js"></script>
+</body>
+
+</html>
